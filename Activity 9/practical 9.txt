@@ -1,0 +1,85 @@
+2.)
+//
+
+Step 1: Heapify the last parent node (element at index 2)
+
+Current list: [10, 7, 26, 43, 3, 13, 11]
+Identify children of 26: 3 (left) and 13 (right)
+Swap with 13 as it's larger: [10, 7, 26, 43, 13, 3, 11]
+Step 2: Heapify the next parent node (element at index 1)
+
+Current list: [10, 7, 26, 43, 13, 3, 11]
+Identify children of 7: 3 (left) and 11 (right)
+Swap with 11 as it's larger: [10, 11, 26, 43, 13, 3, 7]
+Step 3: Heapify the parent node (element at index 0)
+
+Current list: [10, 11, 26, 43, 13, 3, 7]
+Identify children of 10: 11 (left) and 26 (right)
+Swap with 26 as it's larger: [26, 11, 10, 43, 13, 3, 7]
+Step 3.1: Heapify the new position of 10 (element at index 2)
+
+Current list: [26, 11, 10, 43, 13, 3, 7]
+Identify children of 10: 13 (left) and 3 (right)
+Swap with 13 as it's larger: [26, 13, 10, 43, 11, 3, 7]
+Extract elements from the heap
+
+Swap root (26) with last unsorted element (7): [7, 13, 10, 43, 11, 3, 26]
+Heapify the new root element (element at index 0)
+
+Current list: [7, 13, 10, 43, 11, 3, 26]
+Identify children of 7: 13 (left) and 10 (right)
+Swap with 13 as it's larger: [13, 7, 10, 43, 11, 3, 26]
+Continue heapifying the element
+
+Current list: [13, 7, 10, 43, 11, 3, 26]
+Identify children of 7: 11 (left) and 3 (right)
+Swap with 11 as it's larger: [13, 11, 10, 43, 7, 3, 26]
+Extract elements from the heap
+
+Swap root (13) with last unsorted element (26): [26, 11, 10, 43, 7, 3, 13]
+Heapify the new root element (element at index 0)
+
+Current list: [26, 11, 10, 43, 7, 3, 13]
+Identify children of 26: 11 (left) and 10 (right)
+No swaps needed: [26, 11, 10, 43, 7, 3, 13]
+Extract elements from the heap
+
+Swap root (26) with last unsorted element (3): [3, 11, 10, 43, 7, 26, 13]
+Heapify the new root element (element at index 0)
+
+Current list: [3, 11, 10, 43, 7, 26, 13]
+Identify children of 3: 11 (left) and 10 (right)
+No swaps needed: [3, 11, 10, 43, 7, 26, 13]
+Extract elements from the heap
+
+Swap root (3) with last unsorted element (26): [26, 11, 10, 43, 7, 3, 13]
+Heapify the new root element (element at index 0)
+
+Current list: [26, 11, 10, 43, 7, 3, 13]
+Identify children of 26: 11 (left) and 10 (right)
+No swaps needed: [26, 11, 10, 43, 7, 3, 13]
+
+
+
+
+
+
+//
+
+4.) Linear search, also known as sequential search, is a simple search algorithm that sequentially checks each element in a list until the desired element is found or the end of the list is reached. Here's how the linear search algorithm works:
+
+- Start from the beginning:
+
+The algorithm begins by starting at the first element of the list.
+Iterate through the list:
+
+It then sequentially checks each element of the list, starting from the first element and moving towards the end of the list.
+Check for the target element:
+
+At each step, the algorithm compares the current element with the target element (the element being searched for).
+Element found:
+
+If the current element matches the target element, the search is successful, and the algorithm returns the index of the element.
+Element not found:
+
+If the algorithm reaches the end of the list without finding the target element, it concludes that the element is not present in the list, and it returns a special value (commonly -1) to indicate that the search was unsuccessful.
